@@ -12,6 +12,10 @@ app.use(express.json()); //req.body
 
 //create a todo
 
+app.get("/", async (req , res) => {
+    res.send("Hi");
+})
+
 app.post("/create-new-account", async (req, res) => {
   try {
     const {  name, email, password, re_pass } = req.body;
