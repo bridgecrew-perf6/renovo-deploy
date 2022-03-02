@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jha-manvi/renovo-app/issues"
   },
-  "homepage": "https://github.com/jha-manvi/renovo-app#readme"
+  "homepage": "https://github.com/jha-manvi/renovo-app#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
