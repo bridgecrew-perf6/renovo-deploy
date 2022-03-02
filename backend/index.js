@@ -14,7 +14,7 @@ app.use(express.json()); //req.body
 
 app.get("/", async (req , res) => {
     res.send("Hi");
-})
+});
 
 app.post("/create-new-account", async (req, res) => {
   try {
