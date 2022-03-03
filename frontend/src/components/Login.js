@@ -1,7 +1,9 @@
 import React, {  Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import renovo_logo from "../images/Renovo_Black.jpg"
+import "../components/homepage.css"
+import renovo_logo from "../images/logo-black.png"
+import bgReono from "../images/bg.png"
 //import fetch from 'node-fetch';
 
 const LoginUser = () => {
@@ -41,37 +43,35 @@ const LoginUser = () => {
   
 
 };
-
-
-
   return (
   <Fragment>
-  <div className="container col-xxl-8 px-4 py-5">
-    <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div className="col-10 col-sm-8 col-lg-6">
-        {/* <img src="bootstrap-themes.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" /> */}
+  <div className="container" style={{"display":"contents"}}>
+  
+    <div className="row flex-lg-row-reverse align-items-center" style={{"width":"100.5%"}}>
+      
+      <div className="div1 col-10 col-sm-8 col-lg-5" style={{"margin":"0","padding":"0"}}>
+        <img src={bgReono} className="d-block ms-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" style={{"width":"95%","height":"100vh"}}/>
       </div>
-      <div className="col-lg-6 text-center">
-        <img src={renovo_logo} alt="" />
-        <h4 className="blue-color mb-5 fw-bold">Welcome to the Automation of the Circular Industry</h4>
+      <div className="div2 col-lg-7 text-center" style={{"padding":"0 30vh","marginTop":"120px"}}>
+      <img src={renovo_logo} alt="" style={{"width":"130px","height":"33px","marginTop":"-150px"}}/>
+        <h1 style={{"fontSize":"40px","fontWeight":"600","textAlign":"start"}}>Log in</h1>
+        <h4 className="mb-5" style={{"fontSize":"20px","fontWeight":"400","textAlign":"start"}}>Welcome to the Automation of the Circular Industry</h4>
         <main className="form-signin">
-            <form onSubmit={onSubmitForm}>
+            <form onSubmit={onSubmitForm} style={{"width":"100%"}} style={{"display":"contents"}}>
                 <div className="form-floating">
-                <p className="text-start fs-5">Email</p>
-                <input name= "email" type="email" className="form-control my-3" id="floatingInput" placeholder="name@example.com"
-                onChange={e => onChange(e)} />
+                <p className="text-start"  style={{"fontSize":"20px"}}>Email</p>
+                <input type="email" className="form-control my-3" id="floatingInput" placeholder="name@example.com" onChange={e => onChange(e)} style={{"height":"6.5vh","fontSize":"20px"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
                 <div className="form-floating">
-                <p className="text-start fs-5">Password</p>
-                <input name="password" type="password" className="form-control my-3" id="floatingPassword" placeholder="********"
-                onChange={e => onChange(e)} />
+                <p className="text-start" style={{"fontSize":"20px"}}>Password</p>
+                <input type="password" className="form-control my-3" id="floatingPassword" placeholder="********" onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
-                <p className="text-end fs-6 blue-color fw-bold" role="button">Forgot your password?</p>
-                <button className="w-100 btn btn-lg mb-3 blue-bg text-white" style={{"height": "50px"}} type="submit">Login</button>
-                <h4 className="fw-normal mb-3">OR</h4>
-                <Link to="/create-new-account" className="signup w-100 btn btn-lg mb-3" type="submit">Create an account</Link>
+                <p className="bluec text-end blue-color fw-bold" role="button" style={{"fontSize":"14px"}}>Forgot your password?</p>
+                <Link to="/homepage" className="w-100 btn btn-lg mb-3 text-white" style={{"height": "50px","backgroundColor": "#0153FD","marginTop":"20px"}} type="submit">Sign In
+              </Link>
+                <Link to="/create-new-account" className="w-100 btn btn-lg mt-3 mb-5" type="submit" style={{"backgroundColor":"white","color":"black","border":"1.5px solid #EBEFF2"}}>Create an account</Link>
             </form>
         </main>
       </div>
