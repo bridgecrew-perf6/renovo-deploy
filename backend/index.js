@@ -8,9 +8,13 @@ const bcrypt = require("bcrypt");
 app.use(cors());
 app.use(express.json()); //req.body
 
+
+
 //ROUTES//
 
 //create a todo
+
+var f = 0;
 
 app.get("/", async (req , res) => {
     res.send("Hi");
@@ -29,6 +33,7 @@ const salt = await bcrypt.genSalt(10);
     const bcryptRePassword = await bcrypt.hash(re_pass, salt);
 
 if (newUser1.rows.length > 0) {
+  
   return res.status(401).json("User already exists !");
 }
 
@@ -41,7 +46,9 @@ else{
       "INSERT INTO users (user_name, user_email, user_password, re_password) VALUES ($1, $2, $3, $4) RETURNING *",
       [ name , email , bcryptPassword, bcryptRePassword]
     );
+    f=1;
     res.json(newUser.rows[0]);
+
     
     }
     
@@ -60,19 +67,23 @@ app.post("/", async (req, res) => {
     const {  email, password } = req.body;
     const loginUser = await pool.query("SELECT * FROM users where user_email = $1", [ email ]);
 
-    if (loginUser.rows.length === 0) {
-      return res.status(401).json("Email does not exist");
-    }
-
-     const validPassword = await bcrypt.compare(
+    const validPassword = await bcrypt.compare(
       password,
       loginUser.rows[0].user_password
     );
 
-    if (!validPassword) {
+    if (loginUser.rows.length === 0) {
+      return res.status(401).json("Email does not exist");
+    }
+
+     
+
+     if (!validPassword) {
       return res.status(401).json("Invalid Credential");
 
-    } 
+    }
+    
+    
     res.json(loginUser.rows[0]);
   } catch (err) {
     console.error(err.message);

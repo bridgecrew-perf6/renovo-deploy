@@ -1,0 +1,9 @@
+.bluec{
+    color: #0153FD;
+    ;
+    ;
+}
+.homepage-box:hover{
+    border:2px solid #0153FD;
+    cursor: pointer;
+}
