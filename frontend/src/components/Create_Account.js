@@ -1,9 +1,9 @@
 import React, { Fragment, useState} from 'react';
 import "../App.css";
+import renovo_logo from "../images/logo-black.png";
 import "../components/homepage.css"
 import { Link } from "react-router-dom";
-import renovo_logo from "../images/logo-black.png"
-import bgReono from "../images/bg.png"
+import bgReono from "../images/bg.png";
 
 
 
@@ -35,16 +35,21 @@ const InputUser = () => {
       });
 
       console.log(response);
+
+      const k = (response.ok);
+      if(k==true){
+        window.location.href = "/Homepage";
+      } else console.log("result is false");
+
     } catch(err){
       console.error(err.message);
     }
   
 
 };
-  return (
+return (
   <Fragment>
-
-<div className="container" style={{"display":"contents"}}>
+    <div className="container" style={{"display":"contents"}}>
   
   <div className="row flex-lg-row-reverse align-items-center" style={{"width":"100.5%"}}>
     
