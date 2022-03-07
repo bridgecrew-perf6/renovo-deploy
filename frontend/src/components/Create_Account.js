@@ -1,9 +1,16 @@
 import React, { Fragment, useState} from 'react';
 import "../App.css";
+<<<<<<< HEAD
 import renovo_logo from "../images/logo-black.png";
 import "../components/homepage.css"
 import { Link } from "react-router-dom";
 import bgReono from "../images/bg.png";
+=======
+import "../components/homepage.css"
+import { Link } from "react-router-dom";
+import renovo_logo from "../images/logo-black.png"
+import bgReono from "../images/bg.png"
+>>>>>>> f02387f1eb81b0a8b9391eacc21510a770cf0b7f
 
 
 
@@ -87,7 +94,11 @@ return (
                 onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
+<<<<<<< HEAD
                 <button className="bluec w-100 btn btn-lg my-3 text-light" style={{"height": "50px","backgroundColor": "#0153FD","marginTop":"20px"}} type="submit">Create Account</button>
+=======
+                <Link to="/homepage" className="bluec w-100 btn btn-lg my-3 text-light" style={{"height": "50px","backgroundColor": "#0153FD","marginTop":"20px"}} type="submit">Create Account</Link>
+>>>>>>> f02387f1eb81b0a8b9391eacc21510a770cf0b7f
             </form>
       </main>
     </div>
