@@ -47,14 +47,10 @@ const LoginUser = () => {
   
 
 };
-<<<<<<< HEAD
 
 
 
 return (
-=======
-  return (
->>>>>>> f02387f1eb81b0a8b9391eacc21510a770cf0b7f
   <Fragment>
   <div className="container" style={{"display":"contents"}}>
   
@@ -71,30 +67,17 @@ return (
             <form onSubmit={onSubmitForm} style={{"width":"100%"}} style={{"display":"contents"}}>
                 <div className="form-floating">
                 <p className="text-start"  style={{"fontSize":"20px"}}>Email</p>
-<<<<<<< HEAD
                 <input name="email" type="email" className="form-control my-3" id="floatingInput" placeholder="name@example.com" onChange={e => onChange(e)} style={{"height":"6.5vh","fontSize":"20px"}}/>
-=======
-                <input type="email" className="form-control my-3" id="floatingInput" placeholder="name@example.com" onChange={e => onChange(e)} style={{"height":"6.5vh","fontSize":"20px"}}/>
->>>>>>> f02387f1eb81b0a8b9391eacc21510a770cf0b7f
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
                 <div className="form-floating">
                 <p className="text-start" style={{"fontSize":"20px"}}>Password</p>
-<<<<<<< HEAD
                 <input name="password" type="password" className="form-control my-3" id="floatingPassword" placeholder="********" onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
                 <p className="bluec text-end blue-color fw-bold" role="button" style={{"fontSize":"14px"}}>Forgot your password?</p>
                 <button className="w-100 btn btn-lg mb-3 text-white" style={{"height": "50px","backgroundColor": "#0153FD","marginTop":"20px"}} type="submit">Sign In
               </button>
-=======
-                <input type="password" className="form-control my-3" id="floatingPassword" placeholder="********" onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
-                {/* <label for="floatingInput">Email</label> */}
-                </div>
-                <p className="bluec text-end blue-color fw-bold" role="button" style={{"fontSize":"14px"}}>Forgot your password?</p>
-                <Link to="/homepage" className="w-100 btn btn-lg mb-3 text-white" style={{"height": "50px","backgroundColor": "#0153FD","marginTop":"20px"}} type="submit">Sign In
-              </Link>
->>>>>>> f02387f1eb81b0a8b9391eacc21510a770cf0b7f
                 <Link to="/create-new-account" className="w-100 btn btn-lg mt-3 mb-5" type="submit" style={{"backgroundColor":"white","color":"black","border":"1.5px solid #EBEFF2"}}>Create an account</Link>
             </form>
         </main>
