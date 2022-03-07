@@ -76,8 +76,8 @@ return (
               {/* <label for="floatingInput">Email</label> */}
               </div>
               <p className="bluec text-end blue-color fw-bold" role="button" style={{"fontSize":"14px"}}>Forgot your password?</p>
-              <Link to="/homepage" className="w-100 btn btn-lg mb-3 text-white" style={{"height": "6vh","backgroundColor": "#0153FD","marginTop":"20px","fontSize":"2.5vh"}} type="submit">Sign In
-            </Link>
+              <button className="w-100 btn btn-lg mb-3 text-white" style={{"height": "6vh","backgroundColor": "#0153FD","marginTop":"20px","fontSize":"2.5vh"}} type="submit">Sign In
+            </button>
               <Link to="/create-new-account" className="w-100 btn btn-lg mt-3 mb-5" type="submit" style={{"height": "6vh","backgroundColor":"white","color":"black","border":"1.5px solid #EBEFF2","fontSize":"2.5vh"}}>Create an account</Link>
           </form>
       </main>

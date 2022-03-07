@@ -86,7 +86,7 @@ return (
                 onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"2.5vh"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
-                <Link to="/homepage" className="bluec w-100 btn btn-lg my-3 text-light" style={{"height": "6vh","backgroundColor": "#0153FD","marginTop":"20px","fontSize":"2.5vh"}} type="submit">Create Account</Link>
+                <button className="bluec w-100 btn btn-lg my-3 text-light" style={{"height": "6vh","backgroundColor": "#0153FD","marginTop":"20px","fontSize":"2.5vh"}} type="submit">Create Account</button>
             </form>
       </main>
     </div>
