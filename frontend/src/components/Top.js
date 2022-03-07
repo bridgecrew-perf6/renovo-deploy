@@ -7,8 +7,8 @@ export default function Top(props) {
   return (
     <div>
         <div className="top p-5">
-            <h1 className="bluec" style={{"fontWeight":"600"}}>{props.title1}</h1>
-            <h6>{props.title2}</h6>
+            <h1 className="bluec" style={{"fontWeight":"600","fontSize":"4.5vh"}}>{props.title1}</h1>
+            <h6 style={{"fontSize":"2.5vh"}}>{props.title2}</h6>
         </div>
     </div>
   )

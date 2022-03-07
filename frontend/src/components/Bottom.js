@@ -6,9 +6,9 @@ import {
     Routes
   } from "react-router-dom";
 import React from 'react'
-import ConnectH from './Connect-Homepage'
-import Connect1 from './Connect1'
-import Connect2 from './Connect2'
+import ConnectH from './Bottom-Homepage'
+import Connect1 from './Connect0'
+import Connect2 from './Connect1'
 import Connect3 from './Connect3'
 import Connect4 from './Connect4'
 

@@ -51,37 +51,37 @@ const InputUser = () => {
     <div className="div1 col-10 col-sm-8 col-lg-5" style={{"margin":"0","padding":"0"}}>
       <img src={bgReono} className="d-block ms-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" style={{"width":"95%","height":"100vh"}}/>
     </div>
-    <div className="div2 col-lg-7 text-center" style={{"padding":"0 30vh","marginTop":"100px"}}>
-    <img src={renovo_logo} alt="" style={{"width":"130px","height":"33px","marginTop":"-150px"}}/>
-      <h1 className="mb-5" style={{"fontSize":"40px","fontWeight":"600","textAlign":"start"}}>Create an account</h1>
+    <div className="div2 col-lg-7 text-center" style={{"padding":"0 30vh","marginTop":"15vh"}}>
+    <img src={renovo_logo} alt="" style={{"width":"16vh","height":"4vh","marginTop":"-18vh"}}/>
+      <h1 className="mb-3" style={{"fontSize":"5vh","fontWeight":"600","textAlign":"start"}}>Create an account</h1>
       {/* <h4 className="mb-5" style={{"fontSize":"20px","fontWeight":"400","textAlign":"start"}}>Welcome to the Automation of the Circular Industry</h4> */}
       <main className="form-signin">
       <form onSubmit={onSubmitForm}  style={{"width":"100%"}} >
                 <div className="form-floating">
-                <p className="text-start fs-5" style={{"fontSize":"20px"}}>Full Name</p>
+                <p className="text-start" style={{"fontSize":"2.5vh"}}>Full Name</p>
                 <input name="name" type="text" className="form-control my-3" id="floatingInput" placeholder="Full Name" autoComplete="username"
-                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
+                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"2.5vh"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
                 <div className="form-floating">
-                <p className="text-start fs-5" style={{"fontSize":"20px"}}>Email</p>
+                <p className="text-start" style={{"fontSize":"2.5vh"}}>Email</p>
                 <input name="email" type="text" className="form-control my-3" id="floatingName" placeholder="name@example.com"
-                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
+                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"2.5vh"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
                 <div className="form-floating">
-                <p className="text-start fs-5" style={{"fontSize":"20px"}}>Set Password</p>
+                <p className="text-start" style={{"fontSize":"2.5vh"}}>Set Password</p>
                 <input name="password" type="password" className="form-control my-3" id="floatingPassword" placeholder="********" 
-                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
+                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"2.5vh"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
                 <div className="form-floating">
-                <p className="text-start fs-5" style={{"fontSize":"20px"}}>Confirm Password</p>
+                <p className="text-start" style={{"fontSize":"2.5vh"}}>Confirm Password</p>
                 <input name="re_pass" type="password" className="form-control my-3" id="floatingRe_pass" placeholder="********" 
-                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"20px"}}/>
+                onChange={e => onChange(e)}  style={{"height":"6.5vh","fontSize":"2.5vh"}}/>
                 {/* <label for="floatingInput">Email</label> */}
                 </div>
-                <Link to="/homepage" className="bluec w-100 btn btn-lg my-3 text-light" style={{"height": "50px","backgroundColor": "#0153FD","marginTop":"20px"}} type="submit">Create Account</Link>
+                <Link to="/homepage" className="bluec w-100 btn btn-lg my-3 text-light" style={{"height": "6vh","backgroundColor": "#0153FD","marginTop":"20px","fontSize":"2.5vh"}} type="submit">Create Account</Link>
             </form>
       </main>
     </div>
